@@ -13,23 +13,23 @@ public class Main {
 	static String json1 = "{\"id\": 1,\"name\": \"Mert Demirkıran\",\"department\": \"Software\"}";
 	
 	static String json2 = "{\"success\": true,"
-						+  "\"result\":{\"id\": 1,\"name\": \"Mert Demirkıran\",\"department\": \"Software\"}"
-						+ "}";
+			    +  "\"result\":{\"id\": 1,\"name\": \"Mert Demirkıran\",\"department\": \"Software\"}"
+			    + "}";
 	
 	static String json3 = "{ \"result\":[" 
-										+	"{\"id\": 1,\"name\": \"Mert Demirkıran\",\"department\": \"Software\"},"
-										+	"{\"id\": 2,\"name\": \"Emrah Gökden\",\"department\": \"Marketing\"}," 
-										+	"{\"id\": 3,\"name\": \"Aslı Kaya\",\"department\": \"Accounting\"}" 
-								   +   "]"
-					   +  "}";
+						+   "{\"id\": 1,\"name\": \"Mert Demirkıran\",\"department\": \"Software\"},"
+						+   "{\"id\": 2,\"name\": \"Emrah Gökden\",\"department\": \"Marketing\"}," 
+						+   "{\"id\": 3,\"name\": \"Aslı Kaya\",\"department\": \"Accounting\"}" 
+				       +   "]"
+			   +   "}";
 	
 	static String json4 = "{\"success\": true,"
-						+   "\"result\":[" 
-										+	"{\"id\": 1,\"name\": \"Mert Demirkıran\",\"department\": \"Software\"},"
-										+	"{\"id\": 2,\"name\": \"Emrah Gökden\",\"department\": \"Marketing\"}," 
-										+	"{\"id\": 3,\"name\": \"Aslı Kaya\",\"department\": \"Accounting\"}" 
-									+   "]"
-					  +  "}";
+			    +  "\"result\":[" 
+						+   "{\"id\": 1,\"name\": \"Mert Demirkıran\",\"department\": \"Software\"},"
+						+   "{\"id\": 2,\"name\": \"Emrah Gökden\",\"department\": \"Marketing\"}," 
+						+   "{\"id\": 3,\"name\": \"Aslı Kaya\",\"department\": \"Accounting\"}" 
+				      +   "]"
+			   +  "}";
 	
 	public static void main(String[] args) {
 		
@@ -67,7 +67,7 @@ public class Main {
 		
 		System.out.println(json4Obj);
 		
-	    jsonArr = json4Obj.getJSONArray("result");
+	   	jsonArr = json4Obj.getJSONArray("result");
 		
 		empList = getEmployeeList(jsonArr);
 		
