@@ -35,8 +35,4 @@ public class Employee {
 		return "Employee [Id = " + empId + ", empName = " + empName + ", empDept = " + empDept + "]";
 	}
 	
-	
-	
-	
-	
 }
